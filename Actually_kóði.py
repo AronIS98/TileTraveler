@@ -30,19 +30,25 @@ def step(position,command):
 
 def menu(n,s,e,w):
     instruction = 'You can travel:'
-    directions = 
+
     if n and e and s:
         option = '{} (N)orth or (E)ast or (S)outh'.format(instruction)
     elif e and s:
-        option = '{} (E)ast or (S)outh'.format()
+        option = '{} (E)ast or (S)outh'.format(instruction)
     elif e and w:
+        option = '{} (E)ast or (W)est'.format(instruction)
     
     elif s and w:
+        option = '{} (S)outh or (W)est'.format(instruction)
     
     elif s and e:
+        option = '{} (E)ast or (S)outh'.format(instruction)
     
     elif s:
+        option = '{} (S)outh'.format(instruction)
     
     elif n:
+        option = '{} (N)orth'.format(instruction)
     
     elif e:
+        option = '{} (E)east'.format(instruction)
