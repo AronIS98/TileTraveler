@@ -1,1 +1,0 @@
-SKJÓTTU MIG
